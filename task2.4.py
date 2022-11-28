@@ -7,14 +7,20 @@
 # -3 * -1 * 0 = 0
 # Вывод: 0
 
-n = int(input('--->'))
+n = int(input('Enter int -->'))
 numbers = list()
 result = list()
+
 for el in range(-n,n + 1):
     numbers.append(el)
 print(numbers)
 
 s = input('Enter indexes --> ')
 for i in range(0,len(s),2):
-    result.append(s[i])
+    result.append(numbers[int(s[i])])
 print(result)
+
+for m in range(0,len(result) - 1):
+    result[m] *= result[m + 1]
+    m += 1
+print(result[m])

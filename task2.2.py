@@ -11,14 +11,10 @@ fact = 1
 
 
 for el in range(1, n):
-    
-    while n > 1:
-        el += 1
-        fact *= n
+    print(fact)
+    for el in range(1,n):
+        fact *= el
         n -= 1
-        print(result)
-    else:
-        print('1')
 
 
 # while n > 1:
