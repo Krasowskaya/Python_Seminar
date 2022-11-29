@@ -20,7 +20,8 @@ for i in range(0,len(s),2):
     result.append(numbers[int(s[i])])
 print(result)
 
+prod = 1
 for m in range(0,len(result) - 1):
-    result[m] *= result[m + 1]
-    m += 1
-print(result[m])
+    prod *= result[m]
+    m = m + 1
+print('Result: ', prod)

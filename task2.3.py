@@ -15,5 +15,6 @@ print(numbers)
 
 for i in range(0,len(numbers)):
     sum += numbers[i]
-print(sum)
+print('Сумма: ', sum)
+
 
