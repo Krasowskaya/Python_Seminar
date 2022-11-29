@@ -21,7 +21,7 @@ for i in range(0,len(s),2):
 print(result)
 
 prod = 1
-for m in range(0,len(result) - 1):
+for m in range(0,len(result)):
     prod *= result[m]
     m = m + 1
 print('Result: ', prod)
