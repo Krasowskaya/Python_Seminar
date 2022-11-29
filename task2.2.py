@@ -8,21 +8,8 @@ n = int(input('--->'))
 result = list()
 fact = 1
 
-
-
-for el in range(1, n):
-    print(fact)
-    for el in range(1,n):
+for el in range(1, n + 1):
         fact *= el
         n -= 1
-
-
-# while n > 1:
-#     factorial *= n
-#     print(factorial, end=" ")
-#     n -= 1
-
-# for el in range(1,n - 1):
-#     m *= el
-#     result.append(m)
-# print(result)
+        result.append(fact)
+print(result)
